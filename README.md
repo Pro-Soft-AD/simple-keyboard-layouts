@@ -5,6 +5,20 @@
 [![npm version](https://badgen.net/npm/v/simple-keyboard-layouts?color=blue)](https://www.npmjs.com/package/simple-keyboard-layouts)
 <a href="https://github.com/hodgef/simple-keyboard-layouts/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT license"></a> <a href="https://gitlab.com/hodgef/simple-keyboard-layouts" target="_blank"><img alt="Mirroring" src="https://img.shields.io/badge/Mirror-GitLab-blue" /></a> <a href="https://github.com/simple-keyboard/simple-keyboard-layouts/actions"><img alt="Build Status" src="https://github.com/simple-keyboard/simple-keyboard-layouts/workflows/Build/badge.svg?color=green" /></a> <a href="https://github.com/simple-keyboard/simple-keyboard-layouts/actions"><img alt="Publish Status" src="https://github.com/simple-keyboard/simple-keyboard-layouts/workflows/Publish/badge.svg?color=green" /></a>
 
+## About this fork
+
+The original repo doesn't accept new layouts anymore, so we keep the ones we need here: Bulgarian phonetic and Spanish (Spain).
+
+Install from a tag:
+
+```
+npm install --allow-git=root github:Pro-Soft-AD/simple-keyboard-layouts#v3.4.283-hype.1
+```
+
+Since npm 12, Git dependencies are blocked unless you allow them, so also add `allow-git=root` to the `.npmrc` of the project that uses this package. Otherwise `npm install` fails there with `EALLOWGIT`.
+
+If you change a layout, run `npm run build-all` and commit the `build` folder as well. The script isn't called `build` on purpose: with a `build` script npm would install all of this repo's dev tools every time the package is installed from Git.
+
 ## ✨ Demo
 
 [simple-keyboard-layouts demo](https://hodgef.com/simple-keyboard/demos/)
@@ -27,6 +41,7 @@ To fully customize your virtual keyboard, check out the main [simple-keyboard re
 - [Belarusian](https://hodgef.com/simple-keyboard/demos/?d=belarusian) - by [maxshuty](https://github.com/maxshuty)
 - [Bengali](https://hodgef.com/simple-keyboard/demos/?d=bengali) - by [adnan360](https://github.com/adnan360)
 - [Brazilian](https://hodgef.com/simple-keyboard/demos/?d=brazilian) - by [imbroisi](https://github.com/imbroisi)
+- Bulgarian Phonetic (`bulgarianPhonetic`) - by [Pro-Soft-AD](https://github.com/Pro-Soft-AD)
 - [Burmese](https://hodgef.com/simple-keyboard/demos/?d=burmese) - by [U Kyi Win](https://github.com/ukyiwin)
 - [Chinese](https://hodgef.com/simple-keyboard/demos/?d=chinese)
 - [Czech](https://hodgef.com/simple-keyboard/demos/?d=czech) - by [Dmitry Dalimov](https://github.com/slavabogov)
@@ -57,6 +72,7 @@ To fully customize your virtual keyboard, check out the main [simple-keyboard re
 - [Russian Old](https://hodgef.com/simple-keyboard/demos/?d=russian-old) - by [maxshuty](https://github.com/maxshuty)
 - [Sindhi](https://hodgef.com/simple-keyboard/demos/?d=sindhi) - by [Salman Sattar](https://github.com/salman65)
 - [Spanish](https://hodgef.com/simple-keyboard/demos/?d=spanish)
+- Spanish (Spain), also for Catalan (`spanishSpain`) - by [Pro-Soft-AD](https://github.com/Pro-Soft-AD)
 - [Swedish](https://hodgef.com/simple-keyboard/demos/?d=swedish) - by [wpressdev](https://github.com/wpressdev)
 - [Telugu](https://hodgef.com/simple-keyboard/demos/?d=telugu) - by [Kuldeep Kumar](https://github.com/sonukuldeep)
 - [Thai](https://hodgef.com/simple-keyboard/demos/?d=thai)
