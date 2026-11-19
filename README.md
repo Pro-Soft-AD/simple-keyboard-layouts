@@ -12,10 +12,12 @@ The original repo doesn't accept new layouts anymore, so we keep the ones we nee
 Install from a tag:
 
 ```
-npm install github:Pro-Soft-AD/simple-keyboard-layouts#v3.4.283-hype.1
+npm install --allow-git=root github:Pro-Soft-AD/simple-keyboard-layouts#v3.4.283-hype.1
 ```
 
-If you change a layout, run `npm run build` and commit the `build` folder as well.
+Since npm 12, Git dependencies are blocked unless you allow them, so also add `allow-git=root` to the `.npmrc` of the project that uses this package. Otherwise `npm install` fails there with `EALLOWGIT`.
+
+If you change a layout, run `npm run build-all` and commit the `build` folder as well. The script isn't called `build` on purpose: with a `build` script npm would install all of this repo's dev tools every time the package is installed from Git.
 
 ## ✨ Demo
 
