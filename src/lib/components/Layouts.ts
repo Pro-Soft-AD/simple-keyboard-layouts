@@ -8,6 +8,7 @@ import balochi from "../layouts/balochi";
 import belarusian from "../layouts/belarusian";
 import bengali from "../layouts/bengali";
 import brazilian from "../layouts/brazilian";
+import bulgarianPhonetic from "../layouts/bulgarianPhonetic";
 import burmese from "../layouts/burmese";
 import chinese from "../layouts/chinese";
 import czech from "../layouts/czech";
@@ -38,6 +39,7 @@ import russian from "../layouts/russian";
 import russianOld from "../layouts/russianOld";
 import sindhi from "../layouts/sindhi";
 import spanish from "../layouts/spanish";
+import spanishSpain from "../layouts/spanishSpain";
 import swedish from "../layouts/swedish";
 import telugu from "../layouts/telugu";
 import thai from "../layouts/thai";
@@ -57,6 +59,7 @@ class SimpleKeyboardLayouts {
     belarusian,
     bengali,
     brazilian,
+    bulgarianPhonetic,
     burmese,
     chinese,
     czech,
@@ -87,6 +90,7 @@ class SimpleKeyboardLayouts {
     russianOld,
     sindhi,
     spanish,
+    spanishSpain,
     swedish,
     telugu,
     thai,
